@@ -8,7 +8,7 @@ export function SignInButton() {
       className={styles.signInButton}
     >
       Acessar sua conta
-      <FiLogIn />
+      <FiLogIn className={styles.iconLogIn} />
     </button>
   );
 }

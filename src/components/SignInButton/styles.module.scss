@@ -1,7 +1,7 @@
 .signInButton {
   background-color: var(--blue-200);
-  height          : 2.5rem;
-  width           : 200px;
+
+  padding: 0 1rem;
 
   display        : flex;
   justify-content: center;
@@ -16,5 +16,11 @@
 
   &:hover {
     filter: brightness(0.9);
+  }
+
+  .iconLogIn {
+    font-size: 1.25rem;
+
+    margin-left: 0.5rem;
   }
 }
