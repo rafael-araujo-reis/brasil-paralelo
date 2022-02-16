@@ -1,0 +1,22 @@
+.headerContainer {
+  display: flex;
+  border : 1px solid #000;
+
+  height: 5rem;
+}
+
+.hero {
+  display: flex;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  img {
+    // border: 1px solid red;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
