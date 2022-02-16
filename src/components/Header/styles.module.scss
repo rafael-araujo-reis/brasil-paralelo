@@ -1,22 +1,36 @@
 .headerContainer {
-  display: flex;
-  border : 1px solid #000;
+  display      : flex;
+  align-items  : center;
+  border-bottom: 0.1rem solid var(--gray-200);
 
   height: 5rem;
 }
 
 .hero {
-  display: flex;
-
-  max-width: 1200px;
+  display        : flex;
+  justify-content: space-between;
+  width          : 100%;
+  max-width      : 1200px;
 
   margin: 0 auto;
 
   img {
-    // border: 1px solid red;
+    height       : 2.5rem;
+    border-right : 1px solid var(--gray-200);
+    padding-right: 2rem;
   }
 
-  p {
-    font-size: 1.2rem;
+  .search {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+    width: calc(100% - 500px);
+
+    p {
+      font-size  : 1.2rem;
+      font-weight: 400;
+    }
   }
+
 }
