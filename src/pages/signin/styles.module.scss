@@ -2,40 +2,97 @@
   border               : 1px solid #000;
   display              : grid;
   grid-template-columns: repeat(2, 1fr);
-}
 
-.backgroundDesktop {
-  border    : 1px solid #000;
-  background: url('../../../public/images/bg.png') no-repeat;
-  width     : 100%;
-  height    : 100vh;
-}
+  min-height: 100vh;
 
-.containerLogin {
-  border        : 1px solid #000;
-  display       : flex;
-  flex-direction: column;
-
-  >p::after,
-  >p::before {
-    content: 'XX';
-    color  : red
+  .backgroundDesktop {
+    border               : 1px solid #000;
+    background           : url('../../../public/images/bg.png') no-repeat;
+    background-size      : cover;
+    background-position-y: 30%;
+    width                : 100%;
   }
-}
 
-.loginSocialMedia {
-  display        : flex;
-  flex-direction : column;
-  justify-content: center;
+  .containerLogin {
+    display       : flex;
+    flex-direction: column;
+    margin        : 0 auto;
 
-  width    : 100%;
-  max-width: 400px;
-  margin   : 0 auto;
+    width    : 100%;
+    max-width: 400px;
 
-}
+    >p {
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+      color          : var(--gray-500);
+    }
 
-.loginEmail {
-  border        : 1px solid #000;
-  display       : flex;
-  flex-direction: column;
+    >p::after,
+    >p::before {
+      margin : 1.5rem;
+      display: flex;
+
+      content         : '';
+      background-color: var(--gray-300);
+      display         : inline-block;
+      height          : 1px;
+      width           : 30%;
+    }
+
+    img {
+      margin: 3rem 0;
+    }
+
+    .loginSocialMedia {
+      display        : flex;
+      flex-direction : column;
+      justify-content: center;
+
+
+      width : 100%;
+      margin: 0 auto;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .loginEmail {
+      display       : flex;
+      flex-direction: column;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      >input {
+        padding: 0.5rem 1rem;
+
+        border       : var(--border);
+        border-radius: 0.3rem;
+
+        &+input {
+          margin-top: 1rem;
+        }
+      }
+
+      button {
+        padding   : 0.5rem 1rem;
+        border    : none;
+        margin-top: 1rem;
+
+        border-radius: 0.3rem;
+      }
+
+      #accessCount {
+        color     : var(--white-100);
+        background: var(--black-900);
+      }
+
+      #forgetPassword {
+        background-color: transparent
+      }
+    }
+  }
 }
