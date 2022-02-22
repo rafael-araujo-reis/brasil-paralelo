@@ -1,0 +1,43 @@
+.FaGoogle,
+.FaFacebook,
+.FaTwitter {
+  border       : none;
+  border-radius: 5px;
+  color        : var(--white-100);
+  padding      : 0.5rem;
+
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+
+  width    : 100%;
+  max-width: 360px;
+
+  transition: filter 0.2s;
+
+  & :first-child {
+    margin-right: 0.5rem;
+  }
+
+  &+button {
+    margin-top: 1rem;
+  }
+
+  &:hover {
+    filter: brightness(0.9)
+  }
+}
+
+.FaGoogle {
+  color           : var(--balck-100);
+  border          : var(--border);
+  background-color: var(--google);
+}
+
+.FaFacebook {
+  background-color: var(--facebook);
+}
+
+.FaTwitter {
+  background-color: var(--twitter);
+}
