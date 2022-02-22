@@ -3,9 +3,20 @@
   --white-100: #FFFFFF;
 
   --gray-200: #E1E4EF;
+  --gray-300: #C4C4C4;
 
-  --red-200 : #E00000;
+  --red-200: #E00000;
+
+  --blue-100: #55ACEE;
   --blue-200: #0090FF;
+  --blue-250: #0084F9;
+
+  // SocialMedia Colors
+  --facebook: var(--blue-250);
+  --twitter : var(--blue-100);
+  --google  : var(--white-100);
+
+  --border: 1px solid var(--gray-300);
 }
 
 * {
