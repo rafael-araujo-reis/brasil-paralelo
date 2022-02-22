@@ -1,7 +1,13 @@
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 import styles from './home.module.scss';
 
 export default function Home() {
   return (
-    <h1>Hello Word</h1>
+    <>
+      <Header />
+      <h1>Hello Word</h1>
+      <Footer />
+    </>
   );
 }
