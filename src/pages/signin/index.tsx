@@ -5,9 +5,10 @@ export default function SignIn() {
   return (
     <div className={styles.containerSign}>
 
-      <div className={styles.backgroundDesktop}></div>
+      <div className={styles.backgroundDesktop} />
 
       <div className={styles.containerLogin}>
+
         <img src="images/logo.svg" alt="Logo Brasil Pararelo" />
 
         <div className={styles.loginSocialMedia}>
@@ -15,6 +16,7 @@ export default function SignIn() {
           <SocialMediaButton nameSocialMedia={'Google'} />
           <SocialMediaButton nameSocialMedia={'Facebook'} />
           <SocialMediaButton nameSocialMedia={'Twitter'} />
+          <SocialMediaButton nameSocialMedia={'GitHub'} />
         </div>
 
         <p>ou</p>
