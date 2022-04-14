@@ -3,12 +3,14 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import '../styles/global.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
+import { SessionProvider as NextAuthSessionProvider } from 'next-auth/react';
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
 
   return (
-    <>
+    <NextAuthSessionProvider session={session}>
       <Component {...pageProps} />
-    </>
+    </NextAuthSessionProvider>
   );
 }
 
